@@ -1,48 +1,76 @@
-<img style="float:right;border-radius:50%;width:70px;padding:6px" src="avatar-man.jpg" />
+<img style="float:right;border-radius:50%;width:70px;padding:6px" src="profile_pic.jpg" />
 
 <span style="float:right;padding:6px"> 
-  someone@email.com <br> mobile: +852 xxxxxxxx <br> Nationality: Chinese
+  email: arjl5012@gmail.com <br> mobile: +1 (805) 377-8430
 </span>
 
-# Casualwriter  
+# Aaron Jimenez  
 
-## Executive Summary
+## Summary
 
-* 10 years project/team management experience
-* PMP, OCP, AWS Certification
-* Hand-on experience in oracle database
-* Proficient in JavaScript, Java, Powerbuilder
+Machine Learning Engineer with expertise in applied ML, Large Language Models, Generative AI, and Reinforcement Learning. Experienced in developing complex ML algorithms, including Retrieval Augmented Generation. Skilled in cloud platforms (AWS, GCP) for ML model deployment. Strong communicator adept at collaborating across diverse teams. Committed to leveraging ML for impactful business solutions and operational efficiency.
 
 ## Working Experience
 
-#### Current Company (Project Manager, 2015/08 - present) 
+#### Gracenote (Machine Learning Engineer, 2024/07 - present) 
 
-* Lead team of 10 to oversee conception, requirement gathering, documentation and rollout.
-* Conduct troubleshooting, analysis and support. Gather user feedback, document bugs and change requests.
+* **Enhanced Program Search:**  
+  Developed and trained a cross encoder model to boost TV program search match rates, optimizing retrieval accuracy across a vast catalog.
 
-#### Second Company (System Analyst, 2011/06 - 2015/07) 
+* **NLP Innovation:**  
+  Applied advanced NLP techniques to analyze and process TV show metadata, improving content discoverability and user experience.
 
-* Led team of 5 for application development
-* Coordinated with developers, support staff and vendors across Hong Kong, China, Taiwan
+* **Content Description Enrichment:**  
+  Key member in a project to enrich content descriptions using large language models (LLMs). Designing translation and restyling pipelines that adapt text length, tone, and style based on language and regional rules.
 
-#### My first Company (Analyst Programmer, 2005/01 - 2011/05)
+* **Agentic AI Implementation:**  
+  Integrated agentic AI frameworks and dynamic rule sets to automate and refine content adaptation, ensuring consistent quality and localization across markets.
 
-* Develop multiple applications using Javascript, Java, PHP, Powerbuilder, Oracle
+#### Yardi Systems (Machine Learning Engineer, 2023/09 - 2024/06) 
 
-## Projects: 
+* **Team Leadership:**  
+  Key member of the newly established machine learning team at Yardi Systems.
 
-* [Casual-Markdown](https://github.com/casualwriter/powerpage) - a lightweight markdown parser
-* [Powerpage](https://github.com/casualwriter/powerpage) - a lightweight browser for html applications
+* **LLM-Powered Chatbot Development:**  
+  Primary engineer responsible for developing an LLM-powered chatbot tailored for property management clients.
 
-## Education & Qualifications
+* **API Framework Creation:**  
+  Instrumental in creating the Yardi Virtuoso LLM Chatbot API framework, built on Llama Index with advanced capabilities:
+  - Dynamic creation of new tools from OpenAPI specifications.
+  - Enabling function calls to API endpoints for enhanced LLM responses.
+  - Leveraging Retrieval Augmented Generation (RAG) to expand the LLM knowledge base.
 
-* AWS Certification (2021/12)
-* Oracle Certified Professional (2020/02)
-* Project Management Professional (PMP) (2018/10)
-* Bachelor of Computer Science (Sep 2004)
-* The Chinese University of Hong Kong (2000 - 2004)
+* **Chatbot Functionality:**  
+  Designed to:
+  - Provide information to current and potential tenants.
+  - Enable task performance (e.g., scheduling appointments) via a natural language chat interface.
+  - Incorporate custom intent functions tailored for client-specific needs, thereby enhancing user experience and operational efficiency.
+
+## Projects
+
+* **[From Videos to Actions: Exploiting Video Captioning and a Large Language Model for Sequential Action Identification and Prediction](https://github.com/CommodoreArz/NextStepPredictor)**
+  * Final research project for my MS in Computer Science at UC Santa Barbara under Dr. Xifeng Yan.
+  * Utilized Microsoft Research's SwinBERT model to perform video segment captioning across multiple segments, capturing individual actions.
+  * Leveraged Flan-T5 to predict the next likely action based on a series of captions, with training focused on cooking videos using the YouCook2 dataset.
+  * Designed to function as a "copilot" to assist users in various tasks such as cooking, assembling furniture, or performing machinery maintenance.
+
+## Publications
+
+* **[Playing Pokemon Red With Reinforcement Learning](https://scholarworks.calstate.edu/concern/theses/vq27zt01j?locale=en)**
+  * Presented at the first annual CSCSU Undergraduate Conference.
+  * Developed as a capstone project in collaboration with Elizabeth Flaherty and Aaron Jimenez, under the advisement of Dr. Bahareh Abbasi.
+  * Employed Machine Learning techniques to train an agent to play Pokémon Red, using TensorFlow, Stable Baselines, and OpenAI's Gym-Retro.
+  * [Code Hosted on GitHub](https://github.com/eflaherty2556/Pokemon-Red-AI): “Playing Pokémon Red with Reinforcement Learning – Do Pokémon Dream of Electric Mareep?”
+
+
+## Education
+
+* University of California, Santa Barbara  (2023/06)  - M.S Computer Science
+* California State University Channel Islands (2021/07) - B.S. Computer Science
+  * Graduated Summa Cum Laude - 3.96+ GPA
+  * Semester Honors: Spring 2018, Spring 2019, Fall 2019, Spring 2020, Fall 2020, Spring 2021
+  * Honors from the Office of the President - 4.0 GPA: Spring 2019, Spring 2020, Spring 2021
 
 ## Misc. Information
 
-* Languages: English (good), Cantonese (fluent/native), Mandarin (good)
-* Availability: 1 month's notice
+* Languages: English (fluent/native), Spanish (fluent/native)
