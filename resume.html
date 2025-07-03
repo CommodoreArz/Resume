@@ -26,46 +26,96 @@
 </span>
 
 # Aaron Jimenez  
-
 ## Summary
-
 Machine Learning Engineer with expertise in applied ML, Large Language Models, Generative AI, and Reinforcement Learning. Experienced in developing complex ML algorithms, including Retrieval Augmented Generation. Skilled in cloud platforms (AWS, GCP) for ML model deployment. Strong communicator adept at collaborating across diverse teams. Committed to leveraging ML for impactful business solutions and operational efficiency.
-
 ## Working Experience
-
-#### Gracenote (Machine Learning Engineer, 2024/07 - present) 
-
-* **Enhanced Program Search:**
-  *  Developed and trained a cross encoder model to boost TV program search match rates, optimizing retrieval accuracy across a vast catalog.
-
-* **NLP Innovation:**  
-  * Applied advanced NLP techniques to analyze and process TV show metadata, improving content discoverability and user experience.
-
+#### Gracenote (Machine Learning Engineer, 2024/07 - 2025/06)
+* **Video Content Metadata Operations:**
+  * Work in the video content division providing metadata for TV series, shows, movies, cast information, and celebrity biographies to major TV networks, streaming service operators, and global clients.
+* **Starlight Program Search Enhancement:**
+  * Led refinement of the internal Starlight program search system, addressing the challenge of matching requests to correct programs from multiple versions with customer-specific and medium-specific metadata variations (linear TV vs. streaming services).
+* **Episode Search Optimization:**
+  * Leveraged extensive historical request-to-program match data (previously verified by human editors) to improve episode matching to specific series and language combinations.
+  * Developed and trained a cross encoder model as a binary classifier to determine request-candidate program matches, effectively filtering candidates to correct episode versions.
+  * Implemented a hybrid approach where top-k candidates from the cross encoder are processed by an LLM (Claude 3.7 Sonnet) for final selection.
+* **Advanced Cross Encoder Training:**
+  * Designed sophisticated training dataset selection by first running the base (non-fine-tuned) model through the training corpus to obtain confidence scores for all request-candidate pairings.
+  * Strategically curated training data to include "difficult" examples: high-confidence incorrect predictions and near-decision-boundary cases, alongside randomly sampled positive/negative examples to improve model robustness.
+  * Executed hyperparameter tuning and model training using custom scripts with Hugging Face Trainer on AWS SageMaker infrastructure.
 * **Content Description Enrichment:**  
    * Key member in a project to enrich content descriptions using large language models (LLMs). Designing translation and restyling pipelines that adapt text length, tone, and style based on language and regional rules.
-
 * **Agentic AI Implementation:**  
   * Integrated agentic AI frameworks and dynamic rule sets to automate and refine content adaptation, ensuring consistent quality and localization across markets.
-
-#### Yardi Systems (Machine Learning Engineer, 2023/09 - 2024/06) 
-
+  * Created a sophisticated translation framework using LangGraph for translating metadata to customer-required languages. System architecture consists of two interconnected graphs: a main translation graph and a dynamically-built rules evaluation graph.
+  * Designed iterative translation refinement process: LLM generates initial English-to-target-language translation, which is then evaluated by the rules graph for adherence to language-specific editorial standards.
+  * Implemented dynamic rule-rubric system where each target language has customized rule-rubric pairings. LLM judges evaluate translation adherence on a 1-5 scale using rubrics as grading guides, providing both numerical scores and improvement feedback for each rule.
+  * Developed feedback loop mechanism where judge evaluations and improvement suggestions are fed back to the translation model for iterative refinement, continuing until quality thresholds are met.
+#### Yardi Systems (Machine Learning Engineer, 2023/09 - 2024/06)
 * **Team Leadership:**  
   * Key member of the newly established machine learning team at Yardi Systems.
-
-* **LLM-Powered Chatbot Development:**  
-  * Primary engineer responsible for developing an LLM-powered chatbot tailored for property management clients.
-
+* **Dual LLM-Powered Chatbot Development:**  
+  * Primary engineer responsible for developing dual LLM-powered chatbots tailored for property management firms (apartment landlords, commercial property operators, etc.).
 * **API Framework Creation:**  
   * Instrumental in creating the Yardi Virtuoso LLM Chatbot API framework, built on Llama Index with advanced capabilities:
-  * Dynamic creation of new tools from OpenAPI specifications.
+  * Dynamic creation of new tools from OpenAPI JSON specifications, automatically generating tools that the LLM (GPT-4o) could utilize.
+  * Implemented permission-based tool filtering using JWT token user permissions, ensuring only authorized tools from the dynamically created tool list were passed to the LLM.
   * Enabling function calls to API endpoints for enhanced LLM responses.
   * Leveraging Retrieval Augmented Generation (RAG) to expand the LLM knowledge base.
-
-* **Chatbot Functionality:**  
-  * Designed to:
-    * Provide information to current and potential tenants.
-    * Enable task performance (e.g., scheduling appointments) via a natural language chat interface.
-    * Incorporate custom intent functions tailored for client-specific needs, thereby enhancing user experience and operational efficiency.
+* **Customer-Facing Chatbot Functionality:**  
+  * Designed for tenants and prospective renters to:
+    * Set up appointments via API integration for automated scheduling.
+    * Ask property-specific questions (apartment availability, amenities, etc.) based on conversation context.
+    * Schedule property tour appointments through natural language interface.
+    * Create apartment repair work orders with RAG-powered suggestions for self-resolution based on internal database solutions, or facilitate technician requests.
+* **Manager-Facing Chatbot Functionality:**  
+  * Developed advanced capabilities for property managers including:
+    * Processing and analyzing spreadsheets exported from API tools.
+    * Writing contextual emails based on analyzed data.
+    * Creating purchase orders for properties with manager request and approval workflows.
+* **Advanced Spreadsheet Analysis Tool:**  
+  * Integrated and modified PandasAI to enable LLM-driven Python code generation for pandas and matplotlib operations.
+  * Enhanced the library to support creation and modification of new spreadsheets from existing data.
+  * Added capability for LLM to generate charts and graphs from pandas data using matplotlib.
+  * Implemented error handling and self-correction mechanism: when LLM-generated code failed to execute, stderr output was passed back to the LLM for reflection and code correction, ensuring robust execution in local REPL environment.
+#### California State University Channel Islands (Student Assistant - MBA Program Data Analyst, 2019/08 - 2021/08)
+* **Program Analysis:**
+  * Served as program analyst for MBA program at CSU Channel Islands during undergraduate studies.
+  * Worked directly under program director, Dr. Z. John Lu.
+* **Database Management:**
+  * Designed and maintained database of all enrolled MBA students.
+  * Calculated projections of class demand based on historical data.
+  * Tracked current program progress for all students.
+* **Technical Skills Application:**
+  * Utilized Python libraries NumPy and Pandas for comprehensive data analysis.
+  * Used Microsoft Excel for calculations and data management.
+  * Performed course projections based on parameters provided by program director.
+#### California State University Channel Islands (Instructional Student Assistant, 2019/01 - 2021/05)
+* **Learning Resource Center Support:**
+    * Worked as Instructional Student Assistant at CSU Channel Islands' Learning Resource Center for ~2.5 years.
+* **Tutoring Expertise:**
+  * Lower and Upper Division Math
+  * Computer Science
+  * Introductory Economics
+* **Specialized Teaching Roles:**
+  * Primary tutor for COMP 362 - Operating Systems
+  * Assisted students with labs and final project (building basic file systems using FUSE)
+  * Embedded peer tutor for Introduction to Microeconomics course
+  * Attended all class sessions to align with current course material
+  * Held office hours for student consultations and homework assistance
+* **Professional Development:**
+  * Demonstrated ability to explain complex concepts across multiple disciplines
+  * Developed strong communication and teaching skills through diverse tutoring experiences
+#### Applied Silicone (IT Internship, 2015/07 - 2015/08)
+* **High School Summer Experience:**
+  * Worked during summer between junior and senior years of high school.
+* **Technical Responsibilities:**
+  * Managed corporate file servers
+  * Maintained campus-wide wireless network
+  * Oversaw internal QA system
+* **Professional Growth:**
+  * Introduced to Computer Science and IT through this role
+  * Gained foundational knowledge in computer networks and basics of software engineering
+  * Experience provided early exposure to professional IT environment
 
 ## Projects
 
@@ -96,4 +146,4 @@ Machine Learning Engineer with expertise in applied ML, Large Language Models, G
 
 * Languages: English (fluent/native), Spanish (fluent/native)
 * Programming Languages: Python, C, Java
-* Libraries and Frameworks: PyTorch, Hugging Face Stack, Numpy, Pandas, Langchain, Langgraph, LlamaIndex
+* Libraries and Frameworks: PyTorch, Hugging Face Stack (Transformers, Dataset, etc.), Numpy, Pandas, Langchain, Langgraph, LlamaIndex, AWS Sagemaker, AWS Bedrock, Google Vertex AI
